@@ -1,0 +1,75 @@
+# $Header: /scrinium/ANTL/ANTL/CONFIG,v 1.4 2013/02/26 06:30:29 jacobs Exp $
+
+#
+# SOFTWARE - root path for ntl and gmp (if null, standard paths are assumed)
+# CXX - C++ compiler to use
+# ARCH - architecture to target (affects only director name under lib)
+# CXXFLAGS - optimal flags for architecture
+# Optional CXXFLAGS:
+#   - NOSEED: uses fixed seed for RNG (reproduceable results)
+#
+
+SOFTWARE_INC=
+SOFTWARE_LIB=
+#SOFTWARE_INC=-I/usr/local/include
+#SOFTWARE_LIB=-L/usr/local/include
+#SOFTWARE_INC=	-I$(HOME)/Software/include
+#SOFTWARE_LIB=	-L$(HOME)/Software/lib
+
+# C++ compliers to use
+CXX=	g++
+MPICXX=	mpiCC
+
+# Full paths of include and library files (can set separately if required)
+GMP_INC := $(SOFTWARE_INC)
+GMP_LIB := $(SOFTWARE_LIB) -lgmpxx -lgmp
+NTL_INC := $(SOFTWARE_INC)
+NTL_LIB := $(SOFTWARE_LIB) -lntl -lgf2x
+#BLAS_INC := $(SOFTWARE_INC)
+#BLAS_LIB := $(SOFTWARE_LIB) -lcblas -latlas
+#IML_INC := $(SOFTWARE_INC)
+#IML_LIB := $(SOFTWARE_LIB) -liml
+#GIVARO_INC := $(SOFTWARE_INC)
+#GIVARO_LIB := $(SOFTWARE_LIB) -lgivaro
+#LINBOX_INC := $(SOFTWARE_INC)
+#LINBOX_LIB := $(SOFTWARE_LIB) -llinbox
+
+# Architecture to target
+ARCH ?= LINUX-Ci764
+#ARCH ?= LINUX-C2D32
+#ARCH ?= LINUX-P4
+#ARCH ?= LINUX-P4_64
+
+# Corei7 options
+#CFLAGS := -g
+CFLAGS := -O2
+CFLAGS += -m64
+CFLAGS += -Wall
+CFLAGS += -mtune=k8
+CFLAGS += -march=k8
+#CFLAGS += -DDEBUG2
+
+# Core2 options
+#CFLAGS := -g
+#CFLAGS := -m32
+#CFLAGS += -O2
+#CFLAGS += -Wall
+#CFLAGS += -fomit-frame-pointer
+#CFLAGS += -mtune=core2
+#CFLAGS += -march=core2
+#CFLAGS += -Wall
+#CFLAGS += -static
+
+# Extra CXXFLAGS
+CFLAGS += -DNOSEED
+CFLAGS += -DNDEBUG # Disable debug info messages and assertions.
+#CFLAGS += -DDEBUG2 # Disable debug info messages and assertions.
+#CFLAGS += -DPARALLEL
+CFLAGS += -DNEWSIEVE
+
+# Uncomment this line to enable coverage testing with gcov.
+#CFLAGS += -fprofile-arcs -ftest-coverage
+
+# Uncomment these lines to enable profiling with gprof.
+#CFLAGS += -pg
+#LFLAGS := -pg

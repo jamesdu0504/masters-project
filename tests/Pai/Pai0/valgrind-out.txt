@@ -1,0 +1,1335 @@
+==3947== Memcheck, a memory error detector
+==3947== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3947== Using Valgrind-3.14.0-353a3587bb-20181007X and LibVEX; rerun with -h for copyright info
+==3947== Command: ./t 3072 std
+==3947== Parent PID: 782
+==3947== 
+--3947-- 
+--3947-- Valgrind options:
+--3947--    -v
+--3947--    --leak-check=full
+--3947--    --show-leak-kinds=all
+--3947--    --track-origins=yes
+--3947--    --verbose
+--3947--    --log-file=valgrind-out.txt
+--3947-- Contents of /proc/version:
+--3947--   Linux version 4.18.11-200.fc28.x86_64 (mockbuild@bkernel04.phx2.fedoraproject.org) (gcc version 8.1.1 20180712 (Red Hat 8.1.1-5) (GCC)) #1 SMP Sun Sep 30 15:31:40 UTC 2018
+--3947-- 
+--3947-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-rdtscp-sse3-avx
+--3947-- Page sizes: currently 4096, max supported 4096
+--3947-- Valgrind library directory: /usr/lib64/valgrind
+--3947-- TT/TC: VG_(init_tt_tc) (startup of code management)
+--3947-- TT/TC: cache: ignoring --avg-transtab-entry-size=0, using tool provided default 640
+--3947-- TT/TC: cache: 32 sectors of 27,597,024 bytes each = 883,104,768 total TC
+--3947-- TT/TC: table: 32 tables[42588] of C 4,769,856 + H 1,362,816 bytes each = 196,245,504 total TT
+--3947-- TT/TC: table: 42588 tt entries each = 1,362,816 total tt entries
+--3947-- TT/TC: table: 32 htt[65521] of 131,042 bytes each = 4,193,344 total HTT (htt[65521] 65% max occup)
+==3947== Adding active redirection:
+--3947--     new: 0xffffffffff600000 (???                 ) R-> (0000.0) 0x580c2974 ???
+==3947== Adding active redirection:
+--3947--     new: 0xffffffffff600400 (???                 ) R-> (0000.0) 0x580c297e ???
+==3947== Adding active redirection:
+--3947--     new: 0xffffffffff600800 (???                 ) R-> (0000.0) 0x580c2988 ???
+--3947-- Reading syms from /home/parth/Desktop/mike/tests/Pai/Pai0/t
+--3947--    svma 0x00004040e0, avma 0x00004040e0
+--3947-- Reading syms from /usr/lib64/ld-2.27.so
+--3947--    svma 0x0000000f60, avma 0x0004000f60
+--3947-- summarise_context(loc_start = 0x10): cannot summarise(why=1):   
+0x35b: [0]={ 56(r3) { u  u  u  c-56 u  u  u  u  u  u  u  u  u  u  u  u  c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x363): cannot summarise(why=1):   
+0x46d: [0]={ 56(r3) { u  u  u  c-56 u  u  u  u  u  u  u  u  u  u  u  u  c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x10): cannot summarise(why=1):   
+0x36b: [0]={ 56(r3) { u  u  u  c-56 u  u  u  u  u  u  u  u  u  u  u  u  c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x373): cannot summarise(why=1):   
+0x46f: [0]={ 56(r3) { u  u  u  c-56 u  u  u  u  u  u  u  u  u  u  u  u  c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x10): cannot summarise(why=1):   
+0x147: [0]={ 56(r3) { u  u  u  c-56 u  u  u  u  u  u  u  u  u  u  u  u  c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x14f): cannot summarise(why=1):   
+0x1f3: [0]={ 56(r3) { u  u  u  c-56 u  u  u  u  u  u  u  u  u  u  u  u  c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x4): cannot summarise(why=1):   
+0x70: [0]={ 32(r3) { u  u  u  c-32 u  u  u  u  u  u  u  u  u  u  u  u  c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x4): cannot summarise(why=1):   
+0xbe: [0]={ 32(r3) { u  u  u  c-32 u  u  u  u  u  u  u  u  u  u  u  u  c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x4): cannot summarise(why=1):   
+0xae: [0]={ 32(r3) { u  u  u  c-32 u  u  u  u  u  u  u  u  u  u  u  u  c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x2e): cannot summarise(why=1):   
+0x4c: [0]={ 0(r5) { u  u  u  c0 u  u  r9 r8 u  u  u  u  c16 c24 c32 c40 r1 u  u  u  }
+==3947== Adding active redirection:
+--3947--     new: 0x0401e610 (index               ) R-> (0000.0) 0x580c29ac ???
+==3947== Adding active redirection:
+--3947--     new: 0x0401e830 (strlen              ) R-> (0000.0) 0x580c2992 ???
+--3947-- Reading syms from /usr/lib64/valgrind/memcheck-amd64-linux
+--3947--    svma 0x00580001b0, avma 0x00580001b0
+--3947--    object doesn't have a symbol table
+--3947--    object doesn't have a dynamic symbol table
+--3947-- Scheduler: using generic scheduler lock implementation.
+--3947-- Reading suppressions file: /usr/lib64/valgrind/default.supp
+==3947== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-3947-by-parth-on-ict609-p.cs.ucalgary.ca
+==3947== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-3947-by-parth-on-ict609-p.cs.ucalgary.ca
+==3947== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-3947-by-parth-on-ict609-p.cs.ucalgary.ca
+==3947== 
+==3947== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==3947== don't want to do, unless you know exactly what you're doing,
+==3947== or are doing some strange experiment):
+==3947==   /usr/lib64/valgrind/../../bin/vgdb --pid=3947 ...command...
+==3947== 
+==3947== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==3947==   /path/to/gdb ./t
+==3947== and then give GDB the following command
+==3947==   target remote | /usr/lib64/valgrind/../../bin/vgdb --pid=3947
+==3947== --pid is optional if only one valgrind process is running
+==3947== 
+--3947-- TT/TC: initialise sector 0
+--3947-- REDIR: 0x401e830 (ld-linux-x86-64.so.2:strlen) redirected to 0x580c2992 (???)
+--3947-- REDIR: 0x401e610 (ld-linux-x86-64.so.2:index) redirected to 0x580c29ac (???)
+--3947-- Reading syms from /usr/lib64/valgrind/vgpreload_core-amd64-linux.so
+--3947--    svma 0x00000005e0, avma 0x0004a295e0
+--3947-- Reading syms from /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so
+--3947--    svma 0x0000003760, avma 0x0004c2e760
+==3947== Adding active redirection:
+--3947--     new: 0x0401b050 (strcmp              ) R-> (2016.0) 0x04c33450 strcmp
+==3947== WARNING: new redirection conflicts with existing -- ignoring it
+--3947--     old: 0x0401e830 (strlen              ) R-> (0000.0) 0x580c2992 ???
+--3947--     new: 0x0401e830 (strlen              ) R-> (2007.0) 0x04c32370 strlen
+==3947== Adding active redirection:
+--3947--     new: 0x0401ebf0 (stpcpy              ) R-> (2020.0) 0x04c35c00 stpcpy
+==3947== Adding active redirection:
+--3947--     new: 0x0401ed70 (mempcpy             ) R-> (2029.0) 0x04c36ed0 mempcpy
+--3947-- REDIR: 0x401b050 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c33450 (strcmp)
+--3947-- REDIR: 0x401ed70 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c36ed0 (mempcpy)
+--3947-- Reading syms from /usr/local/lib/libmpfr.so.6.0.1
+--3947--    svma 0x000000bde0, avma 0x0004e46de0
+--3947-- Reading syms from /usr/local/lib/libgmp.so.10.3.2
+--3947--    svma 0x000000c580, avma 0x00050c1580
+--3947-- Reading syms from /usr/lib64/libstdc++.so.6.0.25
+--3947--    svma 0x000008c590, avma 0x00053b5590
+--3947--    object doesn't have a symbol table
+==3947== Adding active redirection:
+--3947--     new: 0x053ba760 (operator delete(void) R-> (1005.0) 0x04c304ba operator delete(void*)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x053ba760 (operator delete(void) R-> (1005.0) 0x04c304ba operator delete(void*)
+--3947--     new: 0x053ba760 (operator delete(void) R-> (1005.0) 0x04c3037e operator delete(void*)
+==3947== Adding active redirection:
+--3947--     new: 0x053ba770 (operator delete(void) R-> (1005.0) 0x04c30694 operator delete(void*, unsigned long)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x053ba770 (operator delete(void) R-> (1005.0) 0x04c30694 operator delete(void*, unsigned long)
+--3947--     new: 0x053ba770 (operator delete(void) R-> (1005.0) 0x04c30558 operator delete(void*, unsigned long)
+==3947== Adding active redirection:
+--3947--     new: 0x053ba780 (operator delete(void) R-> (1005.0) 0x04c3086e operator delete(void*, std::nothrow_t const&)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x053ba780 (operator delete(void) R-> (1005.0) 0x04c3086e operator delete(void*, std::nothrow_t const&)
+--3947--     new: 0x053ba780 (operator delete(void) R-> (1005.0) 0x04c30732 operator delete(void*, std::nothrow_t const&)
+==3947== Adding active redirection:
+--3947--     new: 0x053ba790 (operator delete[](vo) R-> (1005.0) 0x04c30b84 operator delete[](void*)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x053ba790 (operator delete[](vo) R-> (1005.0) 0x04c30b84 operator delete[](void*)
+--3947--     new: 0x053ba790 (operator delete[](vo) R-> (1005.0) 0x04c30a48 operator delete[](void*)
+==3947== Adding active redirection:
+--3947--     new: 0x053ba7a0 (operator delete[](vo) R-> (1005.0) 0x04c30d5e operator delete[](void*, unsigned long)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x053ba7a0 (operator delete[](vo) R-> (1005.0) 0x04c30d5e operator delete[](void*, unsigned long)
+--3947--     new: 0x053ba7a0 (operator delete[](vo) R-> (1005.0) 0x04c30c22 operator delete[](void*, unsigned long)
+==3947== Adding active redirection:
+--3947--     new: 0x053ba7b0 (operator delete[](vo) R-> (1005.0) 0x04c30f38 operator delete[](void*, std::nothrow_t const&)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x053ba7b0 (operator delete[](vo) R-> (1005.0) 0x04c30f38 operator delete[](void*, std::nothrow_t const&)
+--3947--     new: 0x053ba7b0 (operator delete[](vo) R-> (1005.0) 0x04c30dfc operator delete[](void*, std::nothrow_t const&)
+==3947== Adding active redirection:
+--3947--     new: 0x053bc700 (operator new(unsigne) R-> (1003.0) 0x04c2f444 operator new(unsigned long)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x053bc700 (operator new(unsigne) R-> (1003.0) 0x04c2f444 operator new(unsigned long)
+--3947--     new: 0x053bc700 (operator new(unsigne) R-> (1003.0) 0x04c2f25c operator new(unsigned long)
+==3947== Adding active redirection:
+--3947--     new: 0x053bc770 (operator new(unsigne) R-> (1001.0) 0x04c2f6be operator new(unsigned long, std::nothrow_t const&)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x053bc770 (operator new(unsigne) R-> (1001.0) 0x04c2f6be operator new(unsigned long, std::nothrow_t const&)
+--3947--     new: 0x053bc770 (operator new(unsigne) R-> (1001.0) 0x04c2f538 operator new(unsigned long, std::nothrow_t const&)
+==3947== Adding active redirection:
+--3947--     new: 0x053bc7c0 (operator new[](unsig) R-> (1003.0) 0x04c2fb51 operator new[](unsigned long)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x053bc7c0 (operator new[](unsig) R-> (1003.0) 0x04c2fb51 operator new[](unsigned long)
+--3947--     new: 0x053bc7c0 (operator new[](unsig) R-> (1003.0) 0x04c2f969 operator new[](unsigned long)
+==3947== Adding active redirection:
+--3947--     new: 0x053bc7d0 (operator new[](unsig) R-> (1001.0) 0x04c2fdcb operator new[](unsigned long, std::nothrow_t const&)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x053bc7d0 (operator new[](unsig) R-> (1001.0) 0x04c2fdcb operator new[](unsigned long, std::nothrow_t const&)
+--3947--     new: 0x053bc7d0 (operator new[](unsig) R-> (1001.0) 0x04c2fc45 operator new[](unsigned long, std::nothrow_t const&)
+--3947-- Reading syms from /usr/lib64/libm-2.27.so
+--3947--    svma 0x000000b9f0, avma 0x00056c69f0
+--3947-- Reading syms from /usr/lib64/libgcc_s-8-20180712.so.1
+--3947--    svma 0x0000002ad0, avma 0x0005a51ad0
+--3947--    object doesn't have a symbol table
+--3947-- summarise_context(loc_start = 0x33d): cannot summarise(why=1):   
+0x340: [0]={ 8(r2) { c-72 c-64 u  c-56 u  u  u  u  u  u  u  u  c-48 c-40 c-32 c-24 c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x341): cannot summarise(why=2):   
+0x343: [0]={ 0(r7) { c-72 c-64 u  c-56 u  u  u  u  u  u  u  u  c-48 c-40 c-32 c-24 r2 u  u  u  }
+--3947-- summarise_context(loc_start = 0x1d4): cannot summarise(why=1):   
+0x1d7: [0]={ 8(r2) { c-72 c-64 u  c-56 u  u  u  u  u  u  u  u  c-48 c-40 c-32 c-24 c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x1d8): cannot summarise(why=2):   
+0x1da: [0]={ 0(r7) { c-72 c-64 u  c-56 u  u  u  u  u  u  u  u  c-48 c-40 c-32 c-24 r2 u  u  u  }
+--3947-- summarise_context(loc_start = 0x1c7): cannot summarise(why=1):   
+0x1ca: [0]={ 16(r6) { c-72 c-64 u  c-56 u  u  c-16 u  u  u  u  u  c-48 c-40 c-32 c-24 c-8 u  u  u  } [1]={ 8(r2) { c-72 c-64 u  c-56 u  u  u  u  u  u  u  u  c-48 c-40 c-32 c-24 c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x1cb): cannot summarise(why=2):   
+0x1d0: [0]={ 16(r6) { c-72 c-64 u  c-56 u  u  c-16 u  u  u  u  u  c-48 c-40 c-32 c-24 c-8 u  u  u  } [1]={ 0(r7) { c-72 c-64 u  c-56 u  u  u  u  u  u  u  u  c-48 c-40 c-32 c-24 r2 u  u  u  }
+--3947-- summarise_context(loc_start = 0x1c2): cannot summarise(why=1):   
+0x1c5: [0]={ 16(r6) { c-72 c-64 u  c-56 u  u  c-16 u  u  u  u  u  c-48 c-40 c-32 c-24 c-8 u  u  u  } [1]={ 8(r2) { c-72 c-64 u  c-56 u  u  u  u  u  u  u  u  c-48 c-40 c-32 c-24 c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x1c6): cannot summarise(why=2):   
+0x1d0: [0]={ 16(r6) { c-72 c-64 u  c-56 u  u  c-16 u  u  u  u  u  c-48 c-40 c-32 c-24 c-8 u  u  u  } [1]={ 0(r7) { c-72 c-64 u  c-56 u  u  u  u  u  u  u  u  c-48 c-40 c-32 c-24 r2 u  u  u  }
+--3947-- Reading syms from /usr/lib64/libpthread-2.27.so
+--3947--    svma 0x0000005be0, avma 0x0005c6cbe0
+--3947-- Reading syms from /usr/lib64/libc-2.27.so
+--3947--    svma 0x00000213a0, avma 0x0005ea73a0
+--3947-- summarise_context(loc_start = 0x34): cannot summarise(why=1):   
+0x52: [0]={ 0(r5) { u  u  u  c0 u  u  r9 r8 u  u  u  u  c16 c24 c32 c40 r1 u  u  u  }
+--3947-- summarise_context(loc_start = 0x35): cannot summarise(why=1):   
+0x7d: [0]={ 0(r5) { u  u  u  c128 u  u  c120 c160 u  u  u  u  c72 c80 c88 c96 c168 u  u  u  }
+--3947-- summarise_context(loc_start = 0x10): cannot summarise(why=1):   
+0x21: [0]={ 32816(r11) { u  u  u  c-48 u  u  c-40 u  u  u  u  u  c-32 c-24 c-16 u  c-8 u  u  u  }
+--3947-- summarise_context(loc_start = 0x1): cannot summarise(why=2):   
+0x9: [0]={ 0(r7) { u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  r5 u  u  u  }
+--3947-- summarise_context(loc_start = 0x9): cannot summarise(why=2):   
+0x22: [0]={ 8(r7) { u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  r5 u  u  u  }
+--3947-- summarise_context(loc_start = 0x84): cannot summarise(why=1):   
+0xa2: [0]={ 0(r5) { u  u  u  c0 u  u  r9 r8 u  u  u  u  c16 c24 c32 c40 r1 u  u  u  }
+==3947== Adding active redirection:
+--3947--     new: 0x05ebed20 (putenv              ) W-> (0000.0) 0x04c377b0 putenv
+==3947== Adding active redirection:
+--3947--     new: 0x05ebf240 (setenv              ) W-> (0000.0) 0x04c37910 setenv
+==3947== Adding active redirection:
+--3947--     new: 0x05ebf2a0 (unsetenv            ) W-> (0000.0) 0x04c37860 unsetenv
+==3947== Adding active redirection:
+--3947--     new: 0x05f0a360 (malloc              ) R-> (1001.0) 0x04c2edc9 malloc
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0a360 (malloc              ) R-> (1001.0) 0x04c2edc9 malloc
+--3947--     new: 0x05f0a360 (malloc              ) R-> (1001.0) 0x04c2ed06 malloc
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0a360 (malloc              ) R-> (1001.0) 0x04c2edc9 malloc
+--3947--     new: 0x05f0a360 (malloc              ) R-> (1001.0) 0x04c2ed06 malloc
+==3947== Adding active redirection:
+--3947--     new: 0x05f0a9a0 (free                ) R-> (1005.0) 0x04c2ffca free
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0a9a0 (free                ) R-> (1005.0) 0x04c2ffca free
+--3947--     new: 0x05f0a9a0 (free                ) R-> (1005.0) 0x04c2ff2c free
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0a9a0 (free                ) R-> (1005.0) 0x04c2ffca free
+--3947--     new: 0x05f0a9a0 (free                ) R-> (1005.0) 0x04c301a4 cfree
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0a9a0 (free                ) R-> (1005.0) 0x04c2ffca free
+--3947--     new: 0x05f0a9a0 (free                ) R-> (1005.0) 0x04c30106 cfree
+==3947== Adding active redirection:
+--3947--     new: 0x05f0aab0 (realloc             ) R-> (1009.0) 0x04c312c1 realloc
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0aab0 (realloc             ) R-> (1009.0) 0x04c312c1 realloc
+--3947--     new: 0x05f0aab0 (realloc             ) R-> (1009.0) 0x04c311aa realloc
+==3947== Adding active redirection:
+--3947--     new: 0x05f0af20 (memalign            ) R-> (1011.0) 0x04c315f9 memalign
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0af20 (memalign            ) R-> (1011.0) 0x04c315f9 memalign
+--3947--     new: 0x05f0af20 (memalign            ) R-> (1011.0) 0x04c313d8 memalign
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0af20 (memalign            ) R-> (1011.0) 0x04c315f9 memalign
+--3947--     new: 0x05f0af20 (memalign            ) R-> (1011.0) 0x04c313d8 memalign
+==3947== Adding active redirection:
+--3947--     new: 0x05f0af30 (valloc              ) R-> (1012.0) 0x04c31519 valloc
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0af30 (valloc              ) R-> (1012.0) 0x04c31519 valloc
+--3947--     new: 0x05f0af30 (valloc              ) R-> (1012.0) 0x04c314dd valloc
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0af30 (valloc              ) R-> (1012.0) 0x04c31519 valloc
+--3947--     new: 0x05f0af30 (valloc              ) R-> (1012.0) 0x04c314dd valloc
+==3947== Adding active redirection:
+--3947--     new: 0x05f0af70 (pvalloc             ) R-> (1018.0) 0x04c2eb88 pvalloc
+==3947== Adding active redirection:
+--3947--     new: 0x05f0afe0 (calloc              ) R-> (1007.0) 0x04c310c0 calloc
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0afe0 (calloc              ) R-> (1007.0) 0x04c310c0 calloc
+--3947--     new: 0x05f0afe0 (calloc              ) R-> (1007.0) 0x04c30fd6 calloc
+==3947== Adding active redirection:
+--3947--     new: 0x05f0b3c0 (malloc_trim         ) R-> (1015.0) 0x04c2eb6a malloc_trim
+==3947== Adding active redirection:
+--3947--     new: 0x05f0b690 (malloc_usable_size  ) R-> (1017.0) 0x04c316fe malloc_usable_size
+==3947== Adding active redirection:
+--3947--     new: 0x05f0b760 (mallinfo            ) R-> (1020.0) 0x04c31b06 mallinfo
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0b760 (mallinfo            ) R-> (1020.0) 0x04c31b06 mallinfo
+--3947--     new: 0x05f0b760 (mallinfo            ) R-> (1020.0) 0x04c31a36 mallinfo
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0b760 (mallinfo            ) R-> (1020.0) 0x04c31b06 mallinfo
+--3947--     new: 0x05f0b760 (mallinfo            ) R-> (1020.0) 0x04c31a36 mallinfo
+==3947== Adding active redirection:
+--3947--     new: 0x05f0b880 (malloc_stats        ) R-> (1019.0) 0x04c2ebc4 malloc_stats
+==3947== Adding active redirection:
+--3947--     new: 0x05f0ba70 (mallopt             ) R-> (1014.0) 0x04c2eb58 mallopt
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0ba70 (mallopt             ) R-> (1014.0) 0x04c2eb58 mallopt
+--3947--     new: 0x05f0ba70 (mallopt             ) R-> (1014.0) 0x04c2eb46 mallopt
+==3947== Adding active redirection:
+--3947--     new: 0x05f0bc60 (posix_memalign      ) R-> (1016.0) 0x04c31555 posix_memalign
+==3947== Adding active redirection:
+--3947--     new: 0x05f0da60 (strcat              ) R-> (2003.0) 0x04c31f10 strcat
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0da60 (strcat              ) R-> (2003.0) 0x04c31f10 strcat
+--3947--     new: 0x05f0da60 (strcat              ) R-> (2003.0) 0x04c31ff0 __GI_strcat
+==3947== Adding active redirection:
+--3947--     new: 0x05f0da90 (index               ) R-> (2002.0) 0x04c31ee0 index
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0da90 (index               ) R-> (2002.0) 0x04c31ee0 index
+--3947--     new: 0x05f0da90 (index               ) R-> (2002.0) 0x04c31e20 strchr
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0da90 (index               ) R-> (2002.0) 0x04c31ee0 index
+--3947--     new: 0x05f0da90 (index               ) R-> (2002.0) 0x04c31e50 __GI_strchr
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0da90 (index               ) R-> (2002.0) 0x04c31ee0 index
+--3947--     new: 0x05f0da90 (index               ) R-> (2002.0) 0x04c31e20 strchr
+==3947== Adding active redirection:
+--3947--     new: 0x05f0dad0 (strcmp              ) R-> (2016.0) 0x04c33310 strcmp
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0dad0 (strcmp              ) R-> (2016.0) 0x04c33310 strcmp
+--3947--     new: 0x05f0dad0 (strcmp              ) R-> (2016.0) 0x04c33360 __GI_strcmp
+==3947== Adding active redirection:
+--3947--     new: 0x05f0db10 (strcpy              ) R-> (2008.0) 0x04c323a0 strcpy
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0db10 (strcpy              ) R-> (2008.0) 0x04c323a0 strcpy
+--3947--     new: 0x05f0db10 (strcpy              ) R-> (2008.0) 0x04c32470 __GI_strcpy
+==3947== Adding active redirection:
+--3947--     new: 0x05f0db40 (strcspn             ) R-> (2033.0) 0x04c37280 strcspn
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0db40 (strcspn             ) R-> (2033.0) 0x04c37280 strcspn
+--3947--     new: 0x05f0db40 (strcspn             ) R-> (2033.0) 0x04c372e0 __GI_strcspn
+==3947== Adding active redirection:
+--3947--     new: 0x05f0df40 (strlen              ) R-> (2007.0) 0x04c32250 strlen
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0df40 (strlen              ) R-> (2007.0) 0x04c32250 strlen
+--3947--     new: 0x05f0df40 (strlen              ) R-> (2007.0) 0x04c32280 __GI_strlen
+==3947== Adding active redirection:
+--3947--     new: 0x05f0df70 (strnlen             ) R-> (2006.0) 0x04c321d0 strnlen
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0df70 (strnlen             ) R-> (2006.0) 0x04c321d0 strnlen
+--3947--     new: 0x05f0df70 (strnlen             ) R-> (2006.0) 0x04c32210 __GI_strnlen
+==3947== Adding active redirection:
+--3947--     new: 0x05f0dfa0 (strncat             ) R-> (2004.0) 0x04c320d0 strncat
+==3947== Adding active redirection:
+--3947--     new: 0x05f0dfd0 (strncmp             ) R-> (2011.0) 0x04c32a00 strncmp
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0dfd0 (strncmp             ) R-> (2011.0) 0x04c32a00 strncmp
+--3947--     new: 0x05f0dfd0 (strncmp             ) R-> (2011.0) 0x04c32a70 __GI_strncmp
+==3947== Adding active redirection:
+--3947--     new: 0x05f0e010 (strncpy             ) R-> (2009.0) 0x04c32540 strncpy
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0e010 (strncpy             ) R-> (2009.0) 0x04c32540 strncpy
+--3947--     new: 0x05f0e010 (strncpy             ) R-> (2009.0) 0x04c32670 __GI_strncpy
+==3947== Adding active redirection:
+--3947--     new: 0x05f0e040 (rindex              ) R-> (2001.0) 0x04c31d00 rindex
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0e040 (rindex              ) R-> (2001.0) 0x04c31d00 rindex
+--3947--     new: 0x05f0e040 (rindex              ) R-> (2001.0) 0x04c31d30 __GI_strrchr
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0e040 (rindex              ) R-> (2001.0) 0x04c31d00 rindex
+--3947--     new: 0x05f0e040 (rindex              ) R-> (2001.0) 0x04c31cd0 strrchr
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0e040 (rindex              ) R-> (2001.0) 0x04c31d00 rindex
+--3947--     new: 0x05f0e040 (rindex              ) R-> (2001.0) 0x04c31cd0 strrchr
+==3947== Adding active redirection:
+--3947--     new: 0x05f0e070 (strpbrk             ) R-> (2032.0) 0x04c37210 strpbrk
+==3947== Adding active redirection:
+--3947--     new: 0x05f0e310 (strspn              ) R-> (2034.0) 0x04c37340 strspn
+==3947== Adding active redirection:
+--3947--     new: 0x05f0e820 (__GI_strstr         ) R-> (2031.0) 0x04c37130 __strstr_sse2
+==3947== Adding active redirection:
+--3947--     new: 0x05f0ecc0 (strstr              ) R-> (2031.0) 0x04c370c0 strstr
+==3947== Adding active redirection:
+--3947--     new: 0x05f0ed80 (memchr              ) R-> (2017.0) 0x04c334f0 memchr
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0ed80 (memchr              ) R-> (2017.0) 0x04c334f0 memchr
+--3947--     new: 0x05f0ed80 (memchr              ) R-> (2017.0) 0x04c33530 __GI_memchr
+==3947== Adding active redirection:
+--3947--     new: 0x05f0edb0 (bcmp                ) R-> (2019.0) 0x04c356b0 bcmp
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0edb0 (bcmp                ) R-> (2019.0) 0x04c356b0 bcmp
+--3947--     new: 0x05f0edb0 (bcmp                ) R-> (2019.0) 0x04c35430 memcmp
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0edb0 (bcmp                ) R-> (2019.0) 0x04c356b0 bcmp
+--3947--     new: 0x05f0edb0 (bcmp                ) R-> (2019.0) 0x04c354d0 __GI_memcmp
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0edb0 (bcmp                ) R-> (2019.0) 0x04c356b0 bcmp
+--3947--     new: 0x05f0edb0 (bcmp                ) R-> (2019.0) 0x04c35430 memcmp
+==3947== Adding active redirection:
+--3947--     new: 0x05f0ee10 (memmove             ) R-> (2018.1) 0x04c35f10 memmove
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0ee10 (memmove             ) R-> (2018.1) 0x04c35f10 memmove
+--3947--     new: 0x05f0ee10 (memmove             ) R-> (2018.1) 0x04c36270 __GI_memmove
+==3947== Adding active redirection:
+--3947--     new: 0x05f0eee0 (memset              ) R-> (2021.0) 0x04c35e00 memset
+==3947== Adding active redirection:
+--3947--     new: 0x05f0ef80 (mempcpy             ) R-> (2029.0) 0x04c36b10 mempcpy
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0ef80 (mempcpy             ) R-> (2029.0) 0x04c36b10 mempcpy
+--3947--     new: 0x05f0ef80 (mempcpy             ) R-> (2029.0) 0x04c36c00 __GI_mempcpy
+==3947== Adding active redirection:
+--3947--     new: 0x05f0f050 (bcopy               ) R-> (2023.0) 0x04c36930 bcopy
+==3947== Adding active redirection:
+--3947--     new: 0x05f0f090 (stpcpy              ) R-> (2020.0) 0x04c357f0 stpcpy
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0f090 (stpcpy              ) R-> (2020.0) 0x04c357f0 stpcpy
+--3947--     new: 0x05f0f090 (stpcpy              ) R-> (2020.0) 0x04c358c0 __GI_stpcpy
+==3947== Adding active redirection:
+--3947--     new: 0x05f0f0c0 (stpncpy             ) R-> (2042.0) 0x04c35cd0 stpncpy
+==3947== Adding active redirection:
+--3947--     new: 0x05f0f0f0 (strcasecmp          ) R-> (2012.0) 0x04c32bc0 strcasecmp
+==3947== Adding active redirection:
+--3947--     new: 0x05f0f140 (strncasecmp         ) R-> (2013.0) 0x04c32ca0 strncasecmp
+==3947== Adding active redirection:
+--3947--     new: 0x05f0f190 (strcasecmp_l        ) R-> (2014.0) 0x04c32e60 strcasecmp_l
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0f190 (strcasecmp_l        ) R-> (2014.0) 0x04c32e60 strcasecmp_l
+--3947--     new: 0x05f0f190 (strcasecmp_l        ) R-> (2014.0) 0x04c32f40 __GI___strcasecmp_l
+==3947== Adding active redirection:
+--3947--     new: 0x05f0f1e0 (strncasecmp_l       ) R-> (2015.0) 0x04c32fb0 strncasecmp_l
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0f1e0 (strncasecmp_l       ) R-> (2015.0) 0x04c32fb0 strncasecmp_l
+--3947--     new: 0x05f0f1e0 (strncasecmp_l       ) R-> (2015.0) 0x04c331f0 __GI___strncasecmp_l
+==3947== Adding active redirection:
+--3947--     new: 0x05f0f280 (memcpy@@GLIBC_2.14  ) R-> (2018.0) 0x04c33910 memcpy@@GLIBC_2.14
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0f280 (memcpy@@GLIBC_2.14  ) R-> (2018.0) 0x04c33910 memcpy@@GLIBC_2.14
+--3947--     new: 0x05f0f280 (memcpy@@GLIBC_2.14  ) R-> (2018.0) 0x04c340d0 __GI_memcpy
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0f280 (memcpy@@GLIBC_2.14  ) R-> (2018.0) 0x04c33910 memcpy@@GLIBC_2.14
+--3947--     new: 0x05f0f280 (memcpy@@GLIBC_2.14  ) R-> (2018.0) 0x04c33cf0 memcpy
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f0f280 (memcpy@@GLIBC_2.14  ) R-> (2018.0) 0x04c33910 memcpy@@GLIBC_2.14
+--3947--     new: 0x05f0f280 (memcpy@@GLIBC_2.14  ) R-> (2018.0) 0x04c33cf0 memcpy
+==3947== Adding active redirection:
+--3947--     new: 0x05f0f970 (strcasestr          ) R-> (2035.0) 0x04c373c0 strcasestr
+==3947== Adding active redirection:
+--3947--     new: 0x05f106d0 (rawmemchr           ) R-> (2026.0) 0x04c36a30 rawmemchr
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f106d0 (rawmemchr           ) R-> (2026.0) 0x04c36a30 rawmemchr
+--3947--     new: 0x05f106d0 (rawmemchr           ) R-> (2026.0) 0x04c36a50 __GI___rawmemchr
+==3947== Adding active redirection:
+--3947--     new: 0x05f10700 (strchrnul           ) R-> (2025.0) 0x04c36a00 strchrnul
+==3947== Adding active redirection:
+--3947--     new: 0x05f15130 (memrchr             ) R-> (2036.0) 0x04c33570 memrchr
+==3947== Adding active redirection:
+--3947--     new: 0x05f15440 (__strncpy_sse2      ) R-> (2009.0) 0x04c327a0 __strncpy_sse2
+==3947== Adding active redirection:
+--3947--     new: 0x05f15490 (__strcmp_sse2       ) R-> (2016.0) 0x04c333b0 __strcmp_sse2
+==3947== Adding active redirection:
+--3947--     new: 0x05f16b80 (__strncmp_sse2      ) R-> (2011.0) 0x04c32ae0 __strncmp_sse2
+==3947== Adding active redirection:
+--3947--     new: 0x05f18cd0 (__memcmp_sse2       ) R-> (2019.0) 0x04c35570 __memcmp_sse2
+==3947== Adding active redirection:
+--3947--     new: 0x05f1d960 (__strchr_sse2       ) R-> (2002.0) 0x04c31e80 __strchr_sse2
+==3947== Adding active redirection:
+--3947--     new: 0x05f1dd90 (__strrchr_sse2      ) R-> (2001.0) 0x04c31d60 __strrchr_sse2
+==3947== Adding active redirection:
+--3947--     new: 0x05f1e080 (__strlen_sse2       ) R-> (2007.0) 0x04c322b0 __strlen_sse2
+==3947== Adding active redirection:
+--3947--     new: 0x05f22ec0 (__stpcpy_sse2       ) R-> (2020.0) 0x04c35990 __stpcpy_sse2
+==3947== Adding active redirection:
+--3947--     new: 0x05f235d0 (__strncpy_sse2_unali) R-> (2009.0) 0x04c328d0 __strncpy_sse2_unaligned
+==3947== Adding active redirection:
+--3947--     new: 0x05f245b0 (__stpcpy_sse2_unalig) R-> (2020.0) 0x04c35a60 __stpcpy_sse2_unaligned
+==3947== Adding active redirection:
+--3947--     new: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.1) 0x04c335b0 memcpy@GLIBC_2.2.5
+==3947== Ignoring lower priority redirection:
+--3947--     old: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.1) 0x04c335b0 memcpy@GLIBC_2.2.5
+--3947--     new: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.0) 0x04c33cf0 memcpy
+==3947== Adding active redirection:
+--3947--     new: 0x05f28b20 (wcschr              ) R-> (2040.0) 0x04c376d0 wcschr
+==3947== Adding active redirection:
+--3947--     new: 0x05f28b50 (wcscmp              ) R-> (2038.0) 0x04c37540 wcscmp
+==3947== Adding active redirection:
+--3947--     new: 0x05f29820 (wcscpy              ) R-> (2039.0) 0x04c37600 wcscpy
+==3947== Adding active redirection:
+--3947--     new: 0x05f298d0 (wcslen              ) R-> (2037.0) 0x04c37490 wcslen
+==3947== Adding active redirection:
+--3947--     new: 0x05f299e0 (wcsncmp             ) R-> (2045.0) 0x04c37590 wcsncmp
+==3947== Adding active redirection:
+--3947--     new: 0x05f29be0 (wcsrchr             ) R-> (2041.0) 0x04c37700 wcsrchr
+==3947== Adding active redirection:
+--3947--     new: 0x05f29df0 (wmemchr             ) R-> (2043.0) 0x04c37730 wmemchr
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f29df0 (wmemchr             ) R-> (2043.0) 0x04c37730 wmemchr
+--3947--     new: 0x05f29df0 (wmemchr             ) R-> (2043.0) 0x04c37770 __GI_wmemchr
+==3947== Adding active redirection:
+--3947--     new: 0x05f2b090 (wcsnlen             ) R-> (2044.0) 0x04c374c0 wcsnlen
+==3947== Adding active redirection:
+--3947--     new: 0x05f8e400 (__memcpy_chk        ) R-> (2030.0) 0x04c36fc0 __memcpy_chk
+==3947== Adding active redirection:
+--3947--     new: 0x05f8e4d0 (__memmove_chk       ) R-> (2024.0) 0x04c36990 __memmove_chk
+==3947== Adding active redirection:
+--3947--     new: 0x05f8e710 (__stpcpy_chk        ) R-> (2028.0) 0x04c36ac0 __stpcpy_chk
+==3947== Adding active redirection:
+--3947--     new: 0x05f8e7d0 (__strcpy_chk        ) R-> (2027.0) 0x04c36a70 __strcpy_chk
+==3947== Adding active redirection:
+--3947--     new: 0x05fbbb90 (malloc_get_state@GLI) R-> (1018.0) 0x04c2eb9c malloc_get_state
+==3947== Adding active redirection:
+--3947--     new: 0x05fbbbb0 (malloc_set_state@GLI) R-> (1018.0) 0x04c2ebb0 malloc_set_state
+==3947== Adding active redirection:
+--3947--     new: 0x05fd8940 (__strcmp_sse42      ) R-> (2016.0) 0x04c33400 __strcmp_sse42
+==3947== Adding active redirection:
+--3947--     new: 0x05fd96f0 (__strncmp_sse42     ) R-> (2011.0) 0x04c32b50 __strncmp_sse42
+==3947== Adding active redirection:
+--3947--     new: 0x05fe41e0 (__memcmp_sse4_1     ) R-> (2019.0) 0x04c35610 __memcmp_sse4_1
+==3947== Adding active redirection:
+--3947--     new: 0x05fe77f0 (__strchr_sse2_no_bsf) R-> (2002.0) 0x04c31eb0 __strchr_sse2_no_bsf
+--3947-- REDIR: 0x5f0ee10 (libc.so.6:memmove) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.1) 0x04c335b0 memcpy@GLIBC_2.2.5
+--3947--     new: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.1) 0x04c35f10 memmove
+--3947-- REDIR: 0x5f0e010 (libc.so.6:strncpy) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f235d0 (__strncpy_sse2_unali) R-> (2009.0) 0x04c328d0 __strncpy_sse2_unaligned
+--3947--     new: 0x05f235d0 (__strncpy_sse2_unali) R-> (2009.0) 0x04c32540 strncpy
+--3947-- REDIR: 0x5f0f0f0 (libc.so.6:strcasecmp) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05fdf1a0 (__strcasecmp_avx    ) R-> (2012.0) 0x04c32bc0 strcasecmp
+--3947-- REDIR: 0x5f0da60 (libc.so.6:strcat) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f25f90 (__strcat_sse2_unalig) R-> (2003.0) 0x04c31f10 strcat
+--3947-- REDIR: 0x5f0e040 (libc.so.6:rindex) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f1dd90 (__strrchr_sse2      ) R-> (2001.0) 0x04c31d60 __strrchr_sse2
+--3947--     new: 0x05f1dd90 (__strrchr_sse2      ) R-> (2001.0) 0x04c31d00 rindex
+--3947-- REDIR: 0x5f106d0 (libc.so.6:rawmemchr) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f18700 (__rawmemchr_sse2    ) R-> (2026.0) 0x04c36a30 rawmemchr
+--3947-- REDIR: 0x5f29df0 (libc.so.6:wmemchr) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f39fd0 (__wmemchr_sse2      ) R-> (2043.0) 0x04c37730 wmemchr
+--3947-- REDIR: 0x5f0ef80 (libc.so.6:mempcpy) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f27ea0 (__mempcpy_sse2_unali) R-> (2029.0) 0x04c36b10 mempcpy
+--3947-- REDIR: 0x5f0edb0 (libc.so.6:bcmp) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05fe41e0 (__memcmp_sse4_1     ) R-> (2019.0) 0x04c35610 __memcmp_sse4_1
+--3947--     new: 0x05fe41e0 (__memcmp_sse4_1     ) R-> (2019.0) 0x04c356b0 bcmp
+--3947-- REDIR: 0x5f0dfd0 (libc.so.6:strncmp) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05fd96f0 (__strncmp_sse42     ) R-> (2011.0) 0x04c32b50 __strncmp_sse42
+--3947--     new: 0x05fd96f0 (__strncmp_sse42     ) R-> (2011.0) 0x04c32a00 strncmp
+--3947-- REDIR: 0x5f0dad0 (libc.so.6:strcmp) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f168d0 (__strcmp_sse2_unalig) R-> (2016.0) 0x04c33310 strcmp
+--3947-- REDIR: 0x5f0eee0 (libc.so.6:memset) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f282d0 (__memset_sse2_unalig) R-> (2021.0) 0x04c35e00 memset
+--3947-- REDIR: 0x5f28b20 (libc.so.6:wcschr) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f3a330 (__wcschr_sse2       ) R-> (2040.0) 0x04c376d0 wcschr
+--3947-- REDIR: 0x5f0df70 (libc.so.6:strnlen) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f1e220 (__strnlen_sse2      ) R-> (2006.0) 0x04c321d0 strnlen
+--3947-- REDIR: 0x5f0db40 (libc.so.6:strcspn) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05fde250 (__strcspn_sse42     ) R-> (2033.0) 0x04c37280 strcspn
+--3947-- REDIR: 0x5f0f140 (libc.so.6:strncasecmp) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05fe0810 (__strncasecmp_avx   ) R-> (2013.0) 0x04c32ca0 strncasecmp
+--3947-- REDIR: 0x5f0db10 (libc.so.6:strcpy) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f22fa0 (__strcpy_sse2_unalig) R-> (2008.0) 0x04c323a0 strcpy
+--3947-- REDIR: 0x5f0f280 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Ignoring lower priority redirection:
+--3947--     old: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.1) 0x04c335b0 memcpy@GLIBC_2.2.5
+--3947--     new: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.0) 0x04c33910 memcpy@@GLIBC_2.14
+--3947-- REDIR: 0x5f2b090 (libc.so.6:wcsnlen) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f3a7d0 (__wcsnlen_sse4_1    ) R-> (2044.0) 0x04c374c0 wcsnlen
+--3947-- REDIR: 0x5f0e070 (libc.so.6:strpbrk) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05fde3d0 (__strpbrk_sse42     ) R-> (2032.0) 0x04c37210 strpbrk
+--3947-- REDIR: 0x5f0da90 (libc.so.6:index) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f1d960 (__strchr_sse2       ) R-> (2002.0) 0x04c31e80 __strchr_sse2
+--3947--     new: 0x05f1d960 (__strchr_sse2       ) R-> (2002.0) 0x04c31ee0 index
+--3947-- REDIR: 0x5f0df40 (libc.so.6:strlen) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f1e080 (__strlen_sse2       ) R-> (2007.0) 0x04c322b0 __strlen_sse2
+--3947--     new: 0x05f1e080 (__strlen_sse2       ) R-> (2007.0) 0x04c32250 strlen
+--3947-- REDIR: 0x5f15130 (libc.so.6:memrchr) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f18900 (__memrchr_sse2      ) R-> (2036.0) 0x04c33570 memrchr
+--3947-- REDIR: 0x5f0f190 (libc.so.6:strcasecmp_l) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05fdf1b0 (__strcasecmp_l_avx  ) R-> (2014.0) 0x04c32e60 strcasecmp_l
+--3947-- REDIR: 0x5f0ed80 (libc.so.6:memchr) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f183d0 (__memchr_sse2       ) R-> (2017.0) 0x04c334f0 memchr
+--3947-- REDIR: 0x5f298d0 (libc.so.6:wcslen) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f3aa90 (__wcslen_sse2       ) R-> (2037.0) 0x04c37490 wcslen
+--3947-- REDIR: 0x5f0e310 (libc.so.6:strspn) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05fde510 (__strspn_sse42      ) R-> (2034.0) 0x04c37340 strspn
+--3947-- REDIR: 0x5f0f0c0 (libc.so.6:stpncpy) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f24c60 (__stpncpy_sse2_unali) R-> (2042.0) 0x04c35cd0 stpncpy
+--3947-- REDIR: 0x5f0f090 (libc.so.6:stpcpy) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f245b0 (__stpcpy_sse2_unalig) R-> (2020.0) 0x04c35a60 __stpcpy_sse2_unaligned
+--3947--     new: 0x05f245b0 (__stpcpy_sse2_unalig) R-> (2020.0) 0x04c357f0 stpcpy
+--3947-- REDIR: 0x5f10700 (libc.so.6:strchrnul) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05f1db80 (__strchrnul_sse2    ) R-> (2025.0) 0x04c36a00 strchrnul
+--3947-- REDIR: 0x5f0f1e0 (libc.so.6:strncasecmp_l) redirected to 0x4a29731 (_vgnU_ifunc_wrapper)
+==3947== Adding active redirection:
+--3947--     new: 0x05fe0820 (__strncasecmp_l_avx ) R-> (2015.0) 0x04c32fb0 strncasecmp_l
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.1) 0x04c335b0 memcpy@GLIBC_2.2.5
+--3947--     new: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.1) 0x04c35f10 memmove
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f1e080 (__strlen_sse2       ) R-> (2007.0) 0x04c322b0 __strlen_sse2
+--3947--     new: 0x05f1e080 (__strlen_sse2       ) R-> (2007.0) 0x04c32250 strlen
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f1d960 (__strchr_sse2       ) R-> (2002.0) 0x04c31e80 __strchr_sse2
+--3947--     new: 0x05f1d960 (__strchr_sse2       ) R-> (2002.0) 0x04c31ee0 index
+==3947== Ignoring lower priority redirection:
+--3947--     old: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.1) 0x04c335b0 memcpy@GLIBC_2.2.5
+--3947--     new: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.0) 0x04c33910 memcpy@@GLIBC_2.14
+--3947-- REDIR: 0x5f1dd90 (libc.so.6:__strrchr_sse2) redirected to 0x4c31d60 (__strrchr_sse2)
+--3947-- REDIR: 0x5f0a360 (libc.so.6:malloc) redirected to 0x4c2edc9 (malloc)
+--3947-- REDIR: 0x5f1e080 (libc.so.6:__strlen_sse2) redirected to 0x4c322b0 (__strlen_sse2)
+--3947-- REDIR: 0x5fe41e0 (libc.so.6:__memcmp_sse4_1) redirected to 0x4c35610 (__memcmp_sse4_1)
+--3947-- REDIR: 0x5f168d0 (libc.so.6:__strcmp_sse2_unaligned) redirected to 0x4c33310 (strcmp)
+--3947-- REDIR: 0x5f1db80 (libc.so.6:__strchrnul_sse2) redirected to 0x4c36a00 (strchrnul)
+--3947-- REDIR: 0x5f0e820 (libc.so.6:__GI_strstr) redirected to 0x4c37130 (__strstr_sse2)
+--3947-- REDIR: 0x53bc7c0 (libstdc++.so.6:operator new[](unsigned long)) redirected to 0x4c2fb51 (operator new[](unsigned long))
+--3947-- REDIR: 0x5f0aab0 (libc.so.6:realloc) redirected to 0x4c312c1 (realloc)
+--3947-- REDIR: 0x5f0a9a0 (libc.so.6:free) redirected to 0x4c2ffca (free)
+--3947-- REDIR: 0x53bc770 (libstdc++.so.6:operator new(unsigned long, std::nothrow_t const&)) redirected to 0x4c2f6be (operator new(unsigned long, std::nothrow_t const&))
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05fe41e0 (__memcmp_sse4_1     ) R-> (2019.0) 0x04c35610 __memcmp_sse4_1
+--3947--     new: 0x05fe41e0 (__memcmp_sse4_1     ) R-> (2019.0) 0x04c356b0 bcmp
+==3947== Ignoring lower priority redirection:
+--3947--     old: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.1) 0x04c335b0 memcpy@GLIBC_2.2.5
+--3947--     new: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.0) 0x04c33910 memcpy@@GLIBC_2.14
+--3947-- REDIR: 0x5f27ec0 (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4c335b0 (memcpy@GLIBC_2.2.5)
+--3947-- REDIR: 0x53bc700 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x4c2f444 (operator new(unsigned long))
+--3947-- REDIR: 0x53ba760 (libstdc++.so.6:operator delete(void*)) redirected to 0x4c304ba (operator delete(void*))
+==3947== Ignoring lower priority redirection:
+--3947--     old: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.1) 0x04c335b0 memcpy@GLIBC_2.2.5
+--3947--     new: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.0) 0x04c33910 memcpy@@GLIBC_2.14
+--3947-- REDIR: 0x53ba770 (libstdc++.so.6:operator delete(void*, unsigned long)) redirected to 0x4c30694 (operator delete(void*, unsigned long))
+--3947-- REDIR: 0x5f27ea0 (libc.so.6:__mempcpy_sse2_unaligned) redirected to 0x4c36b10 (mempcpy)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f1e080 (__strlen_sse2       ) R-> (2007.0) 0x04c322b0 __strlen_sse2
+--3947--     new: 0x05f1e080 (__strlen_sse2       ) R-> (2007.0) 0x04c32250 strlen
+==3947== Ignoring lower priority redirection:
+--3947--     old: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.1) 0x04c335b0 memcpy@GLIBC_2.2.5
+--3947--     new: 0x05f27ec0 (memcpy@GLIBC_2.2.5  ) R-> (2018.0) 0x04c33910 memcpy@@GLIBC_2.14
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f1d960 (__strchr_sse2       ) R-> (2002.0) 0x04c31e80 __strchr_sse2
+--3947--     new: 0x05f1d960 (__strchr_sse2       ) R-> (2002.0) 0x04c31ee0 index
+--3947-- REDIR: 0x5f1d960 (libc.so.6:__strchr_sse2) redirected to 0x4c31e80 (__strchr_sse2)
+==3947== Ignoring duplicate redirection:
+--3947--     old: 0x05f1e080 (__strlen_sse2       ) R-> (2007.0) 0x04c322b0 __strlen_sse2
+--3947--     new: 0x05f1e080 (__strlen_sse2       ) R-> (2007.0) 0x04c32250 strlen
+--3947-- REDIR: 0x53ba790 (libstdc++.so.6:operator delete[](void*)) redirected to 0x4c30b84 (operator delete[](void*))
+==3947== Invalid free() / delete / delete[] / realloc()
+==3947==    at 0x4C3003C: free (vg_replace_malloc.c:540)
+==3947==    by 0x50CA912: __gmpz_clears (in /usr/local/lib/libgmp.so.10.3.2)
+==3947==    by 0x409C75: Pai::~Pai() (Pai.hpp:57)
+==3947==    by 0x40A1ED: Pai0::~Pai0() (Pai0.hpp:11)
+==3947==    by 0x40899C: main (Pai0_test.cpp:45)
+==3947==  Address 0x6272e50 is 16 bytes inside a block of size 48 alloc'd
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x41CB9E: SetSize (ZZ.h:130)
+==3947==    by 0x41CB9E: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2721)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+--3947-- Caught __NR_exit; running __gnu_cxx::__freeres and __libc_freeres() wrapper
+==3947== 
+==3947== HEAP SUMMARY:
+==3947==     in use at exit: 2,368 bytes in 60 blocks
+==3947==   total heap usage: 313 allocs, 254 frees, 489,648 bytes allocated
+==3947== 
+==3947== Searching for pointers to 60 not-freed blocks
+--3947--   Scanning root segment: 0x64d000..0x64dfff (4096)
+--3947--   Scanning root segment: 0x4027000..0x4028fff (8192)
+--3947--   Scanning root segment: 0x4041000..0x4046fff (24576)
+--3947--   Scanning root segment: 0x4227000..0x4227fff (4096)
+--3947--   Scanning root segment: 0x4228000..0x4228fff (4096)
+--3947--   Scanning root segment: 0x4229000..0x4229fff (4096)
+--3947--   Scanning root segment: 0x4c2a000..0x4c2afff (4096)
+--3947--   Scanning root segment: 0x4e3a000..0x4e3afff (4096)
+--3947--   Scanning root segment: 0x50b4000..0x50b4fff (4096)
+--3947--   Scanning root segment: 0x5328000..0x5328fff (4096)
+--3947--   Scanning root segment: 0x56b5000..0x56b6fff (8192)
+--3947--   Scanning root segment: 0x56b7000..0x56bafff (16384)
+--3947--   Scanning root segment: 0x5a4e000..0x5a4efff (4096)
+--3947--   Scanning root segment: 0x5c66000..0x5c66fff (4096)
+--3947--   Scanning root segment: 0x5e81000..0x5e81fff (4096)
+--3947--   Scanning root segment: 0x5e82000..0x5e85fff (16384)
+--3947--   Scanning root segment: 0x623f000..0x6240fff (8192)
+--3947--   Scanning root segment: 0x6241000..0x6244fff (16384)
+--3947--   Scanning root segment: 0x1ffeff6000..0x1fff000fff (45056)
+==3947== Checked 145,096 bytes
+==3947== 
+==3947== 1 bytes in 1 blocks are still reachable in loss record 1 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x423BD3: NTL::UniqueID[abi:cxx11]() (fileio.cpp:116)
+==3947==    by 0x41ADD8: NTL::InitRandomStream() (ZZ.cpp:2539)
+==3947==    by 0x41CCA4: LocalGetCurrentRandomStream (ZZ.cpp:2548)
+==3947==    by 0x41CCA4: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2710)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 2 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x41CC57: _ntl_hidden_function_tls_access_CurrentRandomStream (ZZ.cpp:2498)
+==3947==    by 0x41CC57: LocalGetCurrentRandomStream (ZZ.cpp:2546)
+==3947==    by 0x41CC57: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2710)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 3 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x423C52: NTL::UniqueID[abi:cxx11]() (fileio.cpp:117)
+==3947==    by 0x41ADD8: NTL::InitRandomStream() (ZZ.cpp:2539)
+==3947==    by 0x41CCA4: LocalGetCurrentRandomStream (ZZ.cpp:2548)
+==3947==    by 0x41CCA4: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2710)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 4 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x423CCD: NTL::UniqueID[abi:cxx11]() (fileio.cpp:118)
+==3947==    by 0x41ADD8: NTL::InitRandomStream() (ZZ.cpp:2539)
+==3947==    by 0x41CCA4: LocalGetCurrentRandomStream (ZZ.cpp:2548)
+==3947==    by 0x41CCA4: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2710)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 5 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x423D43: NTL::UniqueID[abi:cxx11]() (fileio.cpp:119)
+==3947==    by 0x41ADD8: NTL::InitRandomStream() (ZZ.cpp:2539)
+==3947==    by 0x41CCA4: LocalGetCurrentRandomStream (ZZ.cpp:2548)
+==3947==    by 0x41CCA4: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2710)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 6 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x41CCDB: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2715)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 7 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x41A55B: NTL::PrintDigits(std::ostream&, long, long) (ZZ.cpp:192)
+==3947==    by 0x41F401: NTL::operator<<(std::ostream&, NTL::ZZ const&) (ZZ.cpp:248)
+==3947==    by 0x40A60D: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:70)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 8 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x42E4C9: _ntl_gdoubtoz(double, _ntl_gbigint_body**) (lip.cpp:4931)
+==3947==    by 0x40EE73: conv (ZZ.h:248)
+==3947==    by 0x40EE73: NTL::conv(NTL::RR&, double) (RR.cpp:706)
+==3947==    by 0x409305: NTL::RR::operator=(double) (RR.h:420)
+==3947==    by 0x4087AB: main (Pai0_test.cpp:141)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 9 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x4113EE: NTL::div(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:386)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 10 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x41135E: NTL::div(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:387)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 11 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x4112AB: NTL::div(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:388)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 12 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x42EFCB: _ntl_gdiv(_ntl_gbigint_body*, _ntl_gbigint_body*, _ntl_gbigint_body**, _ntl_gbigint_body**) (lip.cpp:3366)
+==3947==    by 0x411194: DivRem (ZZ.h:643)
+==3947==    by 0x411194: NTL::div(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:394)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 13 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x42EF63: _ntl_gdiv(_ntl_gbigint_body*, _ntl_gbigint_body*, _ntl_gbigint_body**, _ntl_gbigint_body**) (lip.cpp:3367)
+==3947==    by 0x411194: DivRem (ZZ.h:643)
+==3947==    by 0x411194: NTL::div(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:394)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 8 bytes in 1 blocks are still reachable in loss record 14 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x410E8B: NTL::conv(NTL::RR&, long) (RR.cpp:635)
+==3947==    by 0x41249B: conv (RR.h:381)
+==3947==    by 0x41249B: RR (RR.h:394)
+==3947==    by 0x41249B: to_RR (RR.h:408)
+==3947==    by 0x41249B: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1429)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 8 bytes in 1 blocks are definitely lost in loss record 15 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x50C1868: __gmp_default_allocate (in /usr/local/lib/libgmp.so.10.3.2)
+==3947==    by 0x50CF6F3: __gmpz_inits (in /usr/local/lib/libgmp.so.10.3.2)
+==3947==    by 0x4099DD: Pai::Pai(int, int) (Pai.hpp:50)
+==3947==    by 0x40A1B9: Pai0::Pai0(int, int) (Pai0.hpp:10)
+==3947==    by 0x407B10: main (Pai0_test.cpp:45)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 16 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x40EF23: NTL::conv(NTL::RR&, double) (RR.cpp:699)
+==3947==    by 0x409305: NTL::RR::operator=(double) (RR.h:420)
+==3947==    by 0x4087AB: main (Pai0_test.cpp:141)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 17 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x40E669: NTL::mul(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:324)
+==3947==    by 0x4092B8: NTL::operator*(NTL::RR const&, NTL::RR const&) (RR.h:181)
+==3947==    by 0x408809: main (Pai0_test.cpp:147)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 18 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x411F03: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1335)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 19 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x40FD8B: NTL::add(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:179)
+==3947==    by 0x411CCF: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1319)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 20 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x40F1C9: NTL::mul(NTL::RR&, NTL::RR const&, double) (RR.cpp:842)
+==3947==    by 0x411CA1: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1322)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 21 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x411709: NTL::div(NTL::RR&, NTL::RR const&, double) (RR.cpp:850)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 22 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x41147E: NTL::div(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:385)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 23 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x412553: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1421)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 24 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x40F7F7: NTL::compare(NTL::RR const&, double) (RR.cpp:886)
+==3947==    by 0x412053: operator> (RR.h:241)
+==3947==    by 0x412053: NTL::log(NTL::RR&, NTL::RR const&) (RR.cpp:1369)
+==3947==    by 0x4124A6: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1429)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 25 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x40F681: NTL::compare(NTL::RR const&, NTL::RR const&) (RR.cpp:469)
+==3947==    by 0x412053: operator> (RR.h:241)
+==3947==    by 0x412053: NTL::log(NTL::RR&, NTL::RR const&) (RR.cpp:1369)
+==3947==    by 0x4124A6: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1429)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 26 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x40F3EB: NTL::sub(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:232)
+==3947==    by 0x40F5F6: NTL::SubPrec(NTL::RR&, NTL::RR const&, NTL::RR const&, long) (RR.cpp:282)
+==3947==    by 0x40F63A: NTL::compare(NTL::RR const&, NTL::RR const&) (RR.cpp:471)
+==3947==    by 0x412053: operator> (RR.h:241)
+==3947==    by 0x412053: NTL::log(NTL::RR&, NTL::RR const&) (RR.cpp:1369)
+==3947==    by 0x4124A6: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1429)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 27 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x40FA09: NTL::sub(NTL::RR&, double, NTL::RR const&) (RR.cpp:833)
+==3947==    by 0x412115: NTL::log(NTL::RR&, NTL::RR const&) (RR.cpp:1383)
+==3947==    by 0x4124A6: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1429)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 28 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x412A99: NTL::div(NTL::RR&, double, NTL::RR const&) (RR.cpp:857)
+==3947==    by 0x414D6B: operator/ (RR.h:203)
+==3947==    by 0x414D6B: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1873)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 29 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x40E3A9: NTL::sqr(NTL::RR&, NTL::RR const&) (RR.cpp:346)
+==3947==    by 0x412D86: NTL::power(NTL::RR&, NTL::RR const&, long) (RR.cpp:919)
+==3947==    by 0x414E8C: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1893)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 16 bytes in 1 blocks are still reachable in loss record 30 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x410029: NTL::add(NTL::RR&, NTL::RR const&, double) (RR.cpp:817)
+==3947==    by 0x414FC2: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1909)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 32 bytes in 1 blocks are still reachable in loss record 31 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x423B53: NTL::UniqueID[abi:cxx11]() (fileio.cpp:114)
+==3947==    by 0x41ADD8: NTL::InitRandomStream() (ZZ.cpp:2539)
+==3947==    by 0x41CCA4: LocalGetCurrentRandomStream (ZZ.cpp:2548)
+==3947==    by 0x41CCA4: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2710)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 32 bytes in 1 blocks are still reachable in loss record 32 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x43C43B: NTL::CurrentThreadID[abi:cxx11]() (thread.cpp:18)
+==3947==    by 0x423F94: NTL::UniqueID[abi:cxx11]() (fileio.cpp:124)
+==3947==    by 0x41ADD8: NTL::InitRandomStream() (ZZ.cpp:2539)
+==3947==    by 0x41CCA4: LocalGetCurrentRandomStream (ZZ.cpp:2548)
+==3947==    by 0x41CCA4: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2710)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 32 bytes in 1 blocks are still reachable in loss record 33 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x41AB7E: MakeRaw<NTL::RandomStream, const NTL::RandomStream&> (SmartPtr.h:712)
+==3947==    by 0x41AB7E: make<const NTL::RandomStream&> (SmartPtr.h:1111)
+==3947==    by 0x41AB7E: NTL::SetSeed(NTL::RandomStream const&) (ZZ.cpp:2506)
+==3947==    by 0x41AD72: NTL::SetSeed(unsigned char const*, long) (ZZ.cpp:2520)
+==3947==    by 0x41CCA4: LocalGetCurrentRandomStream (ZZ.cpp:2548)
+==3947==    by 0x41CCA4: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2710)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 35 bytes in 1 blocks are still reachable in loss record 34 of 60
+==3947==    at 0x4C2F4B6: operator new(unsigned long) (vg_replace_malloc.c:344)
+==3947==    by 0x545314E: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib64/libstdc++.so.6.0.25)
+==3947==    by 0x545406A: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) (in /usr/lib64/libstdc++.so.6.0.25)
+==3947==    by 0x424131: replace (basic_string.h:1923)
+==3947==    by 0x424131: replace (basic_string.h:2112)
+==3947==    by 0x424131: assign<char*> (basic_string.h:1462)
+==3947==    by 0x424131: str (sstream:174)
+==3947==    by 0x424131: str (sstream:780)
+==3947==    by 0x424131: NTL::UniqueID[abi:cxx11]() (fileio.cpp:125)
+==3947==    by 0x41ADD8: NTL::InitRandomStream() (ZZ.cpp:2539)
+==3947==    by 0x41CCA4: LocalGetCurrentRandomStream (ZZ.cpp:2548)
+==3947==    by 0x41CCA4: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2710)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 40 bytes in 1 blocks are still reachable in loss record 35 of 60
+==3947==    at 0x4C2F730: operator new(unsigned long, std::nothrow_t const&) (vg_replace_malloc.c:387)
+==3947==    by 0x423215: NTL::RandomStream_impl* NTL::MakeRaw<NTL::RandomStream_impl, NTL::RandomStream_impl const&>(NTL::RandomStream_impl const&) (SmartPtr.h:712)
+==3947==    by 0x41AAC8: make<const NTL::RandomStream_impl&> (SmartPtr.h:1111)
+==3947==    by 0x41AAC8: NTL::RandomStream_impl_build(NTL::RandomStream_impl const&) (ZZ.cpp:2452)
+==3947==    by 0x41AB98: RandomStream (ZZ.h:1130)
+==3947==    by 0x41AB98: MakeRaw<NTL::RandomStream, const NTL::RandomStream&> (SmartPtr.h:712)
+==3947==    by 0x41AB98: make<const NTL::RandomStream&> (SmartPtr.h:1111)
+==3947==    by 0x41AB98: NTL::SetSeed(NTL::RandomStream const&) (ZZ.cpp:2506)
+==3947==    by 0x41AD72: NTL::SetSeed(unsigned char const*, long) (ZZ.cpp:2520)
+==3947==    by 0x41CCA4: LocalGetCurrentRandomStream (ZZ.cpp:2548)
+==3947==    by 0x41CCA4: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2710)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 36 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x427C1E: _ntl_gintoz(long, _ntl_gbigint_body**) (lip.cpp:2038)
+==3947==    by 0x42E3F2: _ntl_gdoubtoz(double, _ntl_gbigint_body**) (lip.cpp:4968)
+==3947==    by 0x40EE73: conv (ZZ.h:248)
+==3947==    by 0x40EE73: NTL::conv(NTL::RR&, double) (RR.cpp:706)
+==3947==    by 0x409305: NTL::RR::operator=(double) (RR.h:420)
+==3947==    by 0x4087AB: main (Pai0_test.cpp:141)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 37 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x426CC8: _ntl_gcopy(_ntl_gbigint_body*, _ntl_gbigint_body**) (lip.cpp:1489)
+==3947==    by 0x4281F0: _ntl_glshift(_ntl_gbigint_body*, long, _ntl_gbigint_body**) (lip.cpp:2308)
+==3947==    by 0x42E410: _ntl_gdoubtoz(double, _ntl_gbigint_body**) (lip.cpp:4978)
+==3947==    by 0x40EE73: conv (ZZ.h:248)
+==3947==    by 0x40EE73: NTL::conv(NTL::RR&, double) (RR.cpp:706)
+==3947==    by 0x409305: NTL::RR::operator=(double) (RR.h:420)
+==3947==    by 0x4087AB: main (Pai0_test.cpp:141)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 38 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x43018D: _ntl_gmul(_ntl_gbigint_body*, _ntl_gbigint_body*, _ntl_gbigint_body**) (lip.cpp:2909)
+==3947==    by 0x40E620: mul (ZZ.h:463)
+==3947==    by 0x40E620: NTL::mul(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:326)
+==3947==    by 0x4092B8: NTL::operator*(NTL::RR const&, NTL::RR const&) (RR.h:181)
+==3947==    by 0x408809: main (Pai0_test.cpp:147)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 39 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x426CC8: _ntl_gcopy(_ntl_gbigint_body*, _ntl_gbigint_body**) (lip.cpp:1489)
+==3947==    by 0x40D8B1: operator= (ZZ.h:82)
+==3947==    by 0x40D8B1: NTL::normalize1(NTL::RR&, NTL::ZZ const&, long, long, long) (RR.cpp:66)
+==3947==    by 0x40EE98: normalize (RR.cpp:82)
+==3947==    by 0x40EE98: xcopy (RR.cpp:119)
+==3947==    by 0x40EE98: NTL::conv(NTL::RR&, double) (RR.cpp:709)
+==3947==    by 0x40F18F: operator= (RR.h:420)
+==3947==    by 0x40F18F: NTL::mul(NTL::RR&, NTL::RR const&, double) (RR.cpp:843)
+==3947==    by 0x411CA1: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1322)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 40 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x426CC8: _ntl_gcopy(_ntl_gbigint_body*, _ntl_gbigint_body**) (lip.cpp:1489)
+==3947==    by 0x40D8B1: operator= (ZZ.h:82)
+==3947==    by 0x40D8B1: NTL::normalize1(NTL::RR&, NTL::ZZ const&, long, long, long) (RR.cpp:66)
+==3947==    by 0x40EE98: normalize (RR.cpp:82)
+==3947==    by 0x40EE98: xcopy (RR.cpp:119)
+==3947==    by 0x40EE98: NTL::conv(NTL::RR&, double) (RR.cpp:709)
+==3947==    by 0x4116CF: operator= (RR.h:420)
+==3947==    by 0x4116CF: NTL::div(NTL::RR&, NTL::RR const&, double) (RR.cpp:851)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 41 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x426CC8: _ntl_gcopy(_ntl_gbigint_body*, _ntl_gbigint_body**) (lip.cpp:1489)
+==3947==    by 0x411155: abs (ZZ.h:384)
+==3947==    by 0x411155: NTL::div(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:390)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 42 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x426CC8: _ntl_gcopy(_ntl_gbigint_body*, _ntl_gbigint_body**) (lip.cpp:1489)
+==3947==    by 0x411179: abs (ZZ.h:384)
+==3947==    by 0x411179: NTL::div(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:393)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 43 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x42ED7B: _ntl_gdiv(_ntl_gbigint_body*, _ntl_gbigint_body*, _ntl_gbigint_body**, _ntl_gbigint_body**) (lip.cpp:3406)
+==3947==    by 0x411194: DivRem (ZZ.h:643)
+==3947==    by 0x411194: NTL::div(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:394)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 44 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x42EDA2: _ntl_gdiv(_ntl_gbigint_body*, _ntl_gbigint_body*, _ntl_gbigint_body**, _ntl_gbigint_body**) (lip.cpp:3410)
+==3947==    by 0x411194: DivRem (ZZ.h:643)
+==3947==    by 0x411194: NTL::div(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:394)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 45 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x426CC8: _ntl_gcopy(_ntl_gbigint_body*, _ntl_gbigint_body**) (lip.cpp:1489)
+==3947==    by 0x42EE56: _ntl_gdiv(_ntl_gbigint_body*, _ntl_gbigint_body*, _ntl_gbigint_body**, _ntl_gbigint_body**) (lip.cpp:3451)
+==3947==    by 0x411194: DivRem (ZZ.h:643)
+==3947==    by 0x411194: NTL::div(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:394)
+==3947==    by 0x411CB9: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1323)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 46 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x427F2C: _ntl_grshift(_ntl_gbigint_body*, long, _ntl_gbigint_body**) (lip.cpp:2393)
+==3947==    by 0x40D9A0: RightShift (ZZ.h:837)
+==3947==    by 0x40D9A0: NTL::normalize1(NTL::RR&, NTL::ZZ const&, long, long, long) (RR.cpp:54)
+==3947==    by 0x411D67: normalize (RR.cpp:82)
+==3947==    by 0x411D67: xcopy (RR.cpp:119)
+==3947==    by 0x411D67: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1327)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x414C44: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1869)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 47 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x427C1E: _ntl_gintoz(long, _ntl_gbigint_body**) (lip.cpp:2038)
+==3947==    by 0x410E1E: operator= (ZZ.h:84)
+==3947==    by 0x410E1E: NTL::conv(NTL::RR&, long) (RR.cpp:636)
+==3947==    by 0x41249B: conv (RR.h:381)
+==3947==    by 0x41249B: RR (RR.h:394)
+==3947==    by 0x41249B: to_RR (RR.h:408)
+==3947==    by 0x41249B: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1429)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 48 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x426CC8: _ntl_gcopy(_ntl_gbigint_body*, _ntl_gbigint_body**) (lip.cpp:1489)
+==3947==    by 0x40D8B1: operator= (ZZ.h:82)
+==3947==    by 0x40D8B1: NTL::normalize1(NTL::RR&, NTL::ZZ const&, long, long, long) (RR.cpp:66)
+==3947==    by 0x40EE98: normalize (RR.cpp:82)
+==3947==    by 0x40EE98: xcopy (RR.cpp:119)
+==3947==    by 0x40EE98: NTL::conv(NTL::RR&, double) (RR.cpp:709)
+==3947==    by 0x40F7AA: operator= (RR.h:420)
+==3947==    by 0x40F7AA: NTL::compare(NTL::RR const&, double) (RR.cpp:887)
+==3947==    by 0x412053: operator> (RR.h:241)
+==3947==    by 0x412053: NTL::log(NTL::RR&, NTL::RR const&) (RR.cpp:1369)
+==3947==    by 0x4124A6: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1429)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 49 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x42814B: _ntl_glshift(_ntl_gbigint_body*, long, _ntl_gbigint_body**) (lip.cpp:2328)
+==3947==    by 0x40F562: LeftShift (ZZ.h:828)
+==3947==    by 0x40F562: NTL::sub(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:248)
+==3947==    by 0x40F5F6: NTL::SubPrec(NTL::RR&, NTL::RR const&, NTL::RR const&, long) (RR.cpp:282)
+==3947==    by 0x40F63A: NTL::compare(NTL::RR const&, NTL::RR const&) (RR.cpp:471)
+==3947==    by 0x412053: operator> (RR.h:241)
+==3947==    by 0x412053: NTL::log(NTL::RR&, NTL::RR const&) (RR.cpp:1369)
+==3947==    by 0x4124A6: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1429)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 50 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x427F2C: _ntl_grshift(_ntl_gbigint_body*, long, _ntl_gbigint_body**) (lip.cpp:2393)
+==3947==    by 0x40D9A0: RightShift (ZZ.h:837)
+==3947==    by 0x40D9A0: NTL::normalize1(NTL::RR&, NTL::ZZ const&, long, long, long) (RR.cpp:54)
+==3947==    by 0x40F5F6: NTL::SubPrec(NTL::RR&, NTL::RR const&, NTL::RR const&, long) (RR.cpp:282)
+==3947==    by 0x40F63A: NTL::compare(NTL::RR const&, NTL::RR const&) (RR.cpp:471)
+==3947==    by 0x412053: operator> (RR.h:241)
+==3947==    by 0x412053: NTL::log(NTL::RR&, NTL::RR const&) (RR.cpp:1369)
+==3947==    by 0x4124A6: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1429)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 51 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x427101: _ntl_gone(_ntl_gbigint_body**) (lip.cpp:1536)
+==3947==    by 0x40EEB1: set (ZZ.h:207)
+==3947==    by 0x40EEB1: set (RR.cpp:173)
+==3947==    by 0x40EEB1: NTL::conv(NTL::RR&, double) (RR.cpp:690)
+==3947==    by 0x40F9CF: operator= (RR.h:420)
+==3947==    by 0x40F9CF: NTL::sub(NTL::RR&, double, NTL::RR const&) (RR.cpp:834)
+==3947==    by 0x412115: NTL::log(NTL::RR&, NTL::RR const&) (RR.cpp:1383)
+==3947==    by 0x4124A6: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1429)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 52 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x427F2C: _ntl_grshift(_ntl_gbigint_body*, long, _ntl_gbigint_body**) (lip.cpp:2393)
+==3947==    by 0x40D9A0: RightShift (ZZ.h:837)
+==3947==    by 0x40D9A0: NTL::normalize1(NTL::RR&, NTL::ZZ const&, long, long, long) (RR.cpp:54)
+==3947==    by 0x412313: NTL::log(NTL::RR&, NTL::RR const&) (RR.cpp:1413)
+==3947==    by 0x4124A6: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1429)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 53 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x427F2C: _ntl_grshift(_ntl_gbigint_body*, long, _ntl_gbigint_body**) (lip.cpp:2393)
+==3947==    by 0x40D9A0: RightShift (ZZ.h:837)
+==3947==    by 0x40D9A0: NTL::normalize1(NTL::RR&, NTL::ZZ const&, long, long, long) (RR.cpp:54)
+==3947==    by 0x40EE98: normalize (RR.cpp:82)
+==3947==    by 0x40EE98: xcopy (RR.cpp:119)
+==3947==    by 0x40EE98: NTL::conv(NTL::RR&, double) (RR.cpp:709)
+==3947==    by 0x412A5F: operator= (RR.h:420)
+==3947==    by 0x412A5F: NTL::div(NTL::RR&, double, NTL::RR const&) (RR.cpp:858)
+==3947==    by 0x414D6B: operator/ (RR.h:203)
+==3947==    by 0x414D6B: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1873)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 54 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x42FC25: _ntl_gsq(_ntl_gbigint_body*, _ntl_gbigint_body**) (lip.cpp:3110)
+==3947==    by 0x40E363: sqr (ZZ.h:469)
+==3947==    by 0x40E363: NTL::sqr(NTL::RR&, NTL::RR const&) (RR.cpp:348)
+==3947==    by 0x412D86: NTL::power(NTL::RR&, NTL::RR const&, long) (RR.cpp:919)
+==3947==    by 0x414E8C: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1893)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are still reachable in loss record 55 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x427F2C: _ntl_grshift(_ntl_gbigint_body*, long, _ntl_gbigint_body**) (lip.cpp:2393)
+==3947==    by 0x40D9A0: RightShift (ZZ.h:837)
+==3947==    by 0x40D9A0: NTL::normalize1(NTL::RR&, NTL::ZZ const&, long, long, long) (RR.cpp:54)
+==3947==    by 0x40EE98: normalize (RR.cpp:82)
+==3947==    by 0x40EE98: xcopy (RR.cpp:119)
+==3947==    by 0x40EE98: NTL::conv(NTL::RR&, double) (RR.cpp:709)
+==3947==    by 0x40FFEF: operator= (RR.h:420)
+==3947==    by 0x40FFEF: NTL::add(NTL::RR&, NTL::RR const&, double) (RR.cpp:818)
+==3947==    by 0x414FC2: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1909)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 48 bytes in 1 blocks are possibly lost in loss record 56 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x423569: AllocateTo (vector.h:653)
+==3947==    by 0x423569: NTL::Vec<unsigned char>::DoSetLength(long) (vector.h:725)
+==3947==    by 0x41CB88: SetLength (vector.h:298)
+==3947==    by 0x41CB88: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2718)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 52 bytes in 1 blocks are possibly lost in loss record 57 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4231A9: AllocateTo (vector.h:653)
+==3947==    by 0x4231A9: NTL::Vec<char>::DoSetLength(long) (vector.h:725)
+==3947==    by 0x41A57B: SetLength (vector.h:298)
+==3947==    by 0x41A57B: Vec (vector.h:230)
+==3947==    by 0x41A57B: NTL::PrintDigits(std::ostream&, long, long) (ZZ.cpp:192)
+==3947==    by 0x41F401: NTL::operator<<(std::ostream&, NTL::ZZ const&) (ZZ.cpp:248)
+==3947==    by 0x40A60D: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:70)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 80 bytes in 1 blocks are still reachable in loss record 58 of 60
+==3947==    at 0x4C31349: realloc (vg_replace_malloc.c:836)
+==3947==    by 0x426147: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1400)
+==3947==    by 0x42849F: _ntl_gadd(_ntl_gbigint_body*, _ntl_gbigint_body*, _ntl_gbigint_body**) (lip.cpp:2458)
+==3947==    by 0x40FF21: add (ZZ.h:365)
+==3947==    by 0x40FF21: NTL::add(NTL::RR&, NTL::RR const&, NTL::RR const&) (RR.cpp:196)
+==3947==    by 0x411CCF: NTL::ReallyComputeLn2(NTL::RR&) (RR.cpp:1319)
+==3947==    by 0x411E61: NTL::ComputeLn2(NTL::RR&) (RR.cpp:1343)
+==3947==    by 0x4122C2: NTL::log(NTL::RR&, NTL::RR const&) (RR.cpp:1407)
+==3947==    by 0x4124A6: NTL::ComputeLn10(NTL::RR&) (RR.cpp:1429)
+==3947==    by 0x414C4E: NTL::operator<<(std::ostream&, NTL::RR const&) (RR.cpp:1870)
+==3947==    by 0x408881: main (Pai0_test.cpp:148)
+==3947== 
+==3947== 128 bytes in 1 blocks are still reachable in loss record 59 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x42324A: SetLength (SmartPtr.h:2004)
+==3947==    by 0x42324A: allocate_space (ZZ.cpp:2181)
+==3947==    by 0x42324A: RandomStream_impl (ZZ.cpp:2216)
+==3947==    by 0x42324A: NTL::RandomStream_impl* NTL::MakeRaw<NTL::RandomStream_impl, NTL::RandomStream_impl const&>(NTL::RandomStream_impl const&) (SmartPtr.h:712)
+==3947==    by 0x41AAC8: make<const NTL::RandomStream_impl&> (SmartPtr.h:1111)
+==3947==    by 0x41AAC8: NTL::RandomStream_impl_build(NTL::RandomStream_impl const&) (ZZ.cpp:2452)
+==3947==    by 0x41AB98: RandomStream (ZZ.h:1130)
+==3947==    by 0x41AB98: MakeRaw<NTL::RandomStream, const NTL::RandomStream&> (SmartPtr.h:712)
+==3947==    by 0x41AB98: make<const NTL::RandomStream&> (SmartPtr.h:1111)
+==3947==    by 0x41AB98: NTL::SetSeed(NTL::RandomStream const&) (ZZ.cpp:2506)
+==3947==    by 0x41AD72: NTL::SetSeed(unsigned char const*, long) (ZZ.cpp:2520)
+==3947==    by 0x41CCA4: LocalGetCurrentRandomStream (ZZ.cpp:2548)
+==3947==    by 0x41CCA4: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2710)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== 576 bytes in 1 blocks are still reachable in loss record 60 of 60
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x423277: SetLength (SmartPtr.h:2004)
+==3947==    by 0x423277: allocate_space (ZZ.cpp:2182)
+==3947==    by 0x423277: RandomStream_impl (ZZ.cpp:2216)
+==3947==    by 0x423277: NTL::RandomStream_impl* NTL::MakeRaw<NTL::RandomStream_impl, NTL::RandomStream_impl const&>(NTL::RandomStream_impl const&) (SmartPtr.h:712)
+==3947==    by 0x41AAC8: make<const NTL::RandomStream_impl&> (SmartPtr.h:1111)
+==3947==    by 0x41AAC8: NTL::RandomStream_impl_build(NTL::RandomStream_impl const&) (ZZ.cpp:2452)
+==3947==    by 0x41AB98: RandomStream (ZZ.h:1130)
+==3947==    by 0x41AB98: MakeRaw<NTL::RandomStream, const NTL::RandomStream&> (SmartPtr.h:712)
+==3947==    by 0x41AB98: make<const NTL::RandomStream&> (SmartPtr.h:1111)
+==3947==    by 0x41AB98: NTL::SetSeed(NTL::RandomStream const&) (ZZ.cpp:2506)
+==3947==    by 0x41AD72: NTL::SetSeed(unsigned char const*, long) (ZZ.cpp:2520)
+==3947==    by 0x41CCA4: LocalGetCurrentRandomStream (ZZ.cpp:2548)
+==3947==    by 0x41CCA4: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2710)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== LEAK SUMMARY:
+==3947==    definitely lost: 8 bytes in 1 blocks
+==3947==    indirectly lost: 0 bytes in 0 blocks
+==3947==      possibly lost: 100 bytes in 2 blocks
+==3947==    still reachable: 2,260 bytes in 57 blocks
+==3947==         suppressed: 0 bytes in 0 blocks
+==3947== 
+==3947== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+==3947== 
+==3947== 1 errors in context 1 of 4:
+==3947== Invalid free() / delete / delete[] / realloc()
+==3947==    at 0x4C3003C: free (vg_replace_malloc.c:540)
+==3947==    by 0x50CA912: __gmpz_clears (in /usr/local/lib/libgmp.so.10.3.2)
+==3947==    by 0x409C75: Pai::~Pai() (Pai.hpp:57)
+==3947==    by 0x40A1ED: Pai0::~Pai0() (Pai0.hpp:11)
+==3947==    by 0x40899C: main (Pai0_test.cpp:45)
+==3947==  Address 0x6272e50 is 16 bytes inside a block of size 48 alloc'd
+==3947==    at 0x4C2EE3B: malloc (vg_replace_malloc.c:309)
+==3947==    by 0x4261F2: _ntl_gsetlength(_ntl_gbigint_body**, long) (lip.cpp:1416)
+==3947==    by 0x41CB9E: SetSize (ZZ.h:130)
+==3947==    by 0x41CB9E: NTL::RandomLen(NTL::ZZ&, long) (ZZ.cpp:2721)
+==3947==    by 0x409215: NTL::RandomLen_ZZ(long) (ZZ.h:1266)
+==3947==    by 0x40A5D0: Pai0::encrypt(PaiPlaintext&, PaiPublickey&) (Pai0.hpp:69)
+==3947==    by 0x407F4B: main (Pai0_test.cpp:103)
+==3947== 
+==3947== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)

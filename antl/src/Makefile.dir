@@ -1,0 +1,17 @@
+#
+# File:  src/Makefile.dir
+# Author: John Lees-Miller (2005-06-06).
+#
+# This is only a partial makefile, included by the root makefile.
+# It contains build rules only for files in this directory.
+# All paths must be relative to the location of the root makefile.
+#
+
+# Register programs with the root makefile.
+#PROGRAMS += 
+
+# Register sources with the root makefile.
+ANTL_SRC += src/common.cpp
+ANTL_SRC += src/debug.cpp
+ANTL_SRC += src/thresholds.cpp
+ANTL_SRC += src/utilities.cpp

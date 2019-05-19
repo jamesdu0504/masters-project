@@ -1,0 +1,14 @@
+#
+# File:  appl/exponentiation/Makefile.dir
+# Author: Mike Jacobson (2015-07-09)
+# Version: $Id$
+#
+# This is only a partial makefile, included by the root makefile.
+# It contains build rules only for files in this directory.
+# All paths must be relative to the location of the root makefile.
+#
+
+# Register sources with the root makefile.
+APPL_SRC += appl/Tests/Exponentiation/zz_p_ExponentiationTest.cpp
+APPL_SRC += appl/Tests/Exponentiation/zz_p_DoubleExponentiationTest.cpp
+APPL_SRC += appl/Tests/Exponentiation/zz_p_MultiExponentiationTest.cpp
