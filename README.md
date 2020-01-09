@@ -1,6 +1,17 @@
-# Masters Project
-![](https://img.shields.io/github/languages/top/daspeks/masters-project)
-![](https://img.shields.io/github/repo-size/daspeks/masters-project)
+<h1 align="center">
+  Masters Project
+</h1>
+
+<p align="center">
+  <a href="https://github.com/gatsbyjs/gatsby/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/languages/top/daspeks/masters-project" alt="C" />
+    <img src="https://img.shields.io/github/repo-size/daspeks/masters-project" alt="Repo size" />
+  </a>
+</p>
+
+
+
+
 
 Efficient C implementations of 
 * [Pailler](https://link.springer.com/chapter/10.1007/3-540-48910-X_16) Cryptosystem
