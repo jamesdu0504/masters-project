@@ -1,4 +1,7 @@
 # Masters Project
+![](https://img.shields.io/github/languages/top/daspeks/masters-project)
+![](https://img.shields.io/github/repo-size/daspeks/masters-project)
+
 Efficient C implementations of 
 * [Pailler Cryptosystem](https://link.springer.com/chapter/10.1007/3-540-48910-X_16), 
 * [Bresson, Catalano and Pointcheval Cryptosystem](https://link.springer.com/chapter/10.1007/978-3-540-40061-5_3)
