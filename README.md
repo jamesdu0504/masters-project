@@ -1,5 +1,5 @@
 <h1 align="center">
-  Masters Project
+  M.Sc. Project
 </h1>
 
 <p align="center">
